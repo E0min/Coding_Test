@@ -4,10 +4,10 @@ def solution(n):
     while a<n:
         i = i + 1 
         a += 1
-        while i%3==0 or ((i//10)*10+3) == i or(i//10==3):
+        while i%3==0 or ( '3'in str(i) ) :
             i = i + 1
         print(i)
     return i
 
 
-print(solution())
+print(solution(100))
