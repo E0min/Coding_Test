@@ -1,16 +1,13 @@
 def solution(my_string):
-    answer = ''
-
-    for i in range(len(my_string)):
+    answer = 0
+    i = 0
+    while i < len(my_string)-2:
         num=''
-        if my_string[i].isdigit():
-            num +=my_string[i]
-            for a in range(i+1,len(my_string)):
-                if my_string[a].isdigit():
-                    num +=my_string[a]
-                else:
-                    break
-        answer = answer + num
+        while my_string[i].isdigit():
+            num += my_string[i]
+            i = i + 1
+            if not my_string[i+1].isdigit():
+                answer = answer + int(num)
+        i = i + 1
     return answer
-
-print(solution("a234ffg"))
+print(solution('123asd1s2f'))
