@@ -1,0 +1,16 @@
+-- 서브쿼리
+-- GROUP BY
+SELECT MONTH(START_DATE) MONTH, CAR_ID, COUNT(*) RECORDS -- 달, 자동차 식별, 달별/자동차별 대여 횟수
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+WHERE START_DATE between '2022-08-01' and '2022-10-31' AND CAR_ID in (
+select  CAR_ID
+from CAR_RENTAL_COMPANY_RENTAL_HISTORY
+WHERE START_DATE between '2022-08-01' and '2022-10-31'
+GROUP BY CAR_ID
+HAVING count(*) >=5
+) 
+GROUP BY MONTH, CAR_ID
+HAVING  RECORDS<>0 -- 차와 달별로 카운트하여 RECORDS에 반영
+ORDER BY MONTH asc,CAR_ID desc;
+-- 서브 쿼리 넘기는 열 
+-- 이름이랑 받는 열 이름이 같아야 한다.
