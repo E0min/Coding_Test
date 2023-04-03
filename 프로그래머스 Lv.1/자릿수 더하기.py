@@ -5,3 +5,4 @@ def solution(n):
         answer += int(i)
 
     return answer
+
