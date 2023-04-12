@@ -1,17 +1,8 @@
-def solution(n, m):
-    answer = []
-    return answer
+def gcd(m,n): #m>n
+    if m//n==0:
+        return n
+    else:
+        gcd(n,m%n)
+        
 
-
-def max(x): #x를 구성하는 서로소의 집합
-    quo=x
-    se={}
-    while quo != 1:
-        for i in range(2,x+1):
-            if quo // i == 0:
-                se.add(i)
-                quo = quo // i
-
-    return se
-
-print(max(6))
+print(gcd(120,36))

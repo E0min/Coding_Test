@@ -1,5 +1,4 @@
-a= (1,2,3,4,5)
-b= (6,7,8,9,10)
+a = 'sfa SADF sd'
+b = a.split(' ')
+print(b)
 
-for i in zip(a,b):
-    print(sum(i))
