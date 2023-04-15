@@ -1,1 +1,4 @@
-print(int('-3'))
+a = 'sfa SADF sd'
+b = a.split(' ')
+print(b)
+

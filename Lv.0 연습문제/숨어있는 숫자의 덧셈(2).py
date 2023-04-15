@@ -1,13 +1,15 @@
 def solution(my_string):
     answer = 0
-    i = 0
-    while i < len(my_string)-2:
-        num=''
-        while my_string[i].isdigit():
-            num += my_string[i]
-            i = i + 1
-            if not my_string[i+1].isdigit():
-                answer = answer + int(num)
-        i = i + 1
+    ans =''
+    for i in range(len(my_string)):
+        if my_string[i].isdigit():
+            ans += my_string[i]
+        else:
+            if ans != '' or my_string[len(my_string)-1].isdigit():
+                print(ans)
+                answer += int(ans)
+            ans = ''
+        i =+ 1
     return answer
-print(solution('123asd1s2f'))
+
+print(solution('123asd1s2f2'))
