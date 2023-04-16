@@ -1,25 +1,15 @@
-'''
 def solution(s):
-    answer = ''
-    li = s.split(' ')
-    for i in li:
-        index = 0
-        while index<len(i):
-            i[index].upper if index%2==1 else i[index].lower()
-            index+=1
-            
-    answer = ' '.join(li)
-    return answer'''
-
-li = ['sadf','sgfg','jknk']
-
-for i in li:
-        index = 0
-        while index < len(i):
-            if index%2==1:
-                 i[index] = i[index].lower() 
-            else:
-                  i[index] = i[index].upper()
-            index+=1
-print(li)
-            
+    
+    li = list(s)
+    index = 0
+    for i in range(len(li)):
+        if li[i]== ' ':
+            index=0
+        elif index%2==0:
+            li[i]=li[i].upper()
+            index +=1
+        else:
+            li[i]=li[i].lower()
+            index +=1
+        
+    return ''.join(li)
