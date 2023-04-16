@@ -1,4 +1,2 @@
-a = 'sfa SADF sd'
-b = a.split(' ')
-print(b)
-
+a =("av":2,"ab":3,"av":4)
+print(a)
