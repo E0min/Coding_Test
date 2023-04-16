@@ -1,2 +1,3 @@
-a =("av":2,"ab":3,"av":4)
+a =[["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]
+a = dict(a)
 print(a)
