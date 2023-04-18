@@ -1,5 +1,3 @@
-a =[["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]
-a = dict(a)
-s = "try hello world"	
-li = s.split(' ')
-print(list(li))
+a=[[1, 4], [9, 2], [3, 8], [11, 6]]	
+print(a[0:2],a[2:4])
+print(a[-1:1])
