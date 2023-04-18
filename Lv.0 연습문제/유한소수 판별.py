@@ -2,7 +2,7 @@ def solution(a, b):
     if a%b==0:
         return 1
     else:
-        m = set(div(gcd(a,b)))
+        m = set(div(b//gcd(a,b)))
     
     if m == {1} or m=={2} or m=={5} or m=={2,5} or m=={5,2}:
         return 1
@@ -29,5 +29,4 @@ def div(num):
             return li
             break
             
-print(solution(3500,500))
-print(gcd(3500,500))
+            
