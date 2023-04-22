@@ -1,33 +1,14 @@
-def solution(a, b):
-    if a%b==0:
-        return 1
-    else:
-        m = set(div(gcd(a,b)))
-    
-    if m == {1} or m=={2} or m=={5} or m=={2,5} or m=={5,2}:
-        return 1
-    else:
-        return 2
-    
-
-def gcd(a,b):
-    if b==0:
-        return a
-    else:
-        return gcd(b,a%b)
-    
-def div(num):
-    count = 2
-    li=[]
+def bin(number,n):
+    answer =[]
     while True:
-        if num%count==0:
-            li.append(count)
-            num = num // count
-        else:
-            count+=1
-        if num//1 ==1:
-            return li
+        answer.append(number%2)
+        number = number//2
+        if number//2 == 0:
+            answer.append(number%2)
+            for i in range(n-len(answer)):
+                answer.append(0)
             break
-            
-print(solution(3500,500))
-print(gcd(3500,500))
+    return answer[::-1]
+
+
+print(bin(7,5))
