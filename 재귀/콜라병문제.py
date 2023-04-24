@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(1000000)
+
 def solution(a, b, n):# 콜라 a병을 주면 b병을 준다.
     answer = 0
     recent=n
