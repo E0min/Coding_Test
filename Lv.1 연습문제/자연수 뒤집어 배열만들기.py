@@ -3,4 +3,9 @@ def solution(n):
     
     for i in reversed(str(n)):
         answer.append(int(i))
+    print(answer)
     return answer
+
+
+
+
