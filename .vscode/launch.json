@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "P1931",
+            "request": "launch",
+            "mainClass": "그리디.P1931",
+            "projectName": "Coding_Test_796844e6"
+        },
+        {
+            "type": "java",
+            "name": "P11047",
+            "request": "launch",
+            "mainClass": "그리디.P11047",
+            "projectName": "Coding_Test_796844e6"
+        },
+        {
             "name": "Python: 현재 파일",
             "type": "python",
             "request": "launch",
