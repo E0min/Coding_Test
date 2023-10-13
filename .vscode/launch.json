@@ -9,6 +9,13 @@
             "name": "P1931",
             "request": "launch",
             "mainClass": "그리디.P1931",
+            "projectName": "Coding_Test_f4106551"
+        },
+        {
+            "type": "java",
+            "name": "P1931",
+            "request": "launch",
+            "mainClass": "그리디.P1931",
             "projectName": "Coding_Test_796844e6"
         },
         {
